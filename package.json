@@ -1,0 +1,43 @@
+{
+  "name": "eslint-plugin-file-extension-in-import-ts",
+  "version": "1.0.0",
+  "description": "The plugin check and fix file extensions in Node.js application type module in Typescript",
+  "keywords": [],
+  "homepage": "https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts#readme",
+  "bugs": {
+    "url": "https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "format": "npm run format:package && npm run format:prettier && npm run format:eslint",
+    "format:eslint": "eslint ./lib/** --fix",
+    "format:package": "sort-package-json",
+    "format:prettier": "prettier --write \"lib/**/*.js\"",
+    "lint": "npm run lint:code",
+    "lint:code": "eslint ./lib/**",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "is-core-module": "^2.9.0",
+    "resolve": "^1.22.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-unicorn": "^43.0.1",
+    "git-is-ready-to-push": "^1.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "sort-package-json": "^1.57.0"
+  }
+}
