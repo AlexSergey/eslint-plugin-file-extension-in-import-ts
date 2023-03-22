@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-file-extension-in-import-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The plugin check and fix file extensions in Node.js application type module in Typescript",
   "keywords": [],
   "homepage": "https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts#readme",
