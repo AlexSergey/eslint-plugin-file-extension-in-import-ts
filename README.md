@@ -43,10 +43,26 @@ In this case we need to replace .ts extension to .js.
 In this plugin I will add possibility to make mapping for extensions:
 
 ```js
-'file-extension-in-import-ts/file-extension-in-import-ts': [ 'error', 'always', { extensionsMapping: {'.ts': '.js'}}]
+'file-extension-in-import-ts/file-extension-in-import-ts': [
+  'error',
+  'always',
+  { extensionsMapping: {'.ts': '.js', forceIndexFileImport: true }}
+]
 ```
 
 It means, this rule will fix our ts files to .js extension in import statement.
+
+The property "forceIndexFileImport" will add "/index.js" if you import directory, for example:
+
+```js
+import module from './my-module';
+```
+
+will be changed to:
+
+```js
+import module from './my-module/index.js';
+```
 
 ## Installation:
 
