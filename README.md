@@ -46,7 +46,7 @@ In this plugin I will add possibility to make mapping for extensions:
 'file-extension-in-import-ts/file-extension-in-import-ts': [
   'error',
   'always',
-  { extensionsMapping: {'.ts': '.js', forceIndexFileImport: true }}
+  { extMapping: {'.ts': '.js' }, forceIndexFileImport: true }
 ]
 ```
 
