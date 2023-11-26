@@ -46,13 +46,11 @@ In this plugin I will add possibility to make mapping for extensions:
 'file-extension-in-import-ts/file-extension-in-import-ts': [
   'error',
   'always',
-  { extMapping: {'.ts': '.js' }, forceIndexFileImport: true }
+  { extMapping: {'.ts': '.js' } }
 ]
 ```
 
 It means, this rule will fix our ts files to .js extension in import statement.
-
-The property "forceIndexFileImport" will add "/index.js" if you import directory, for example:
 
 ```js
 import module from './my-module';
